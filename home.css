@@ -1,0 +1,33 @@
+ul {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    list-style: none;
+}
+
+li {
+    padding: 10px 15px;
+    font-size: 14px;
+    position: relative;
+    display: block;
+    border-radius:5px;
+}
+li.inactive:hover {
+    background: #e5e8ef;;
+}
+
+.active {
+    background-color: #002855;
+    color: #FFFFFF;
+}
+
+.bottom{
+    display: flex;
+}
+
+.sidebar {
+    flex: 1;
+    float:left
+}
+.main-body {
+    flex: 1;
+}
+
