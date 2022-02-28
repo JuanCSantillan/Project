@@ -1,5 +1,5 @@
 ul {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
     list-style: none;
 }
 
@@ -25,9 +25,9 @@ li.inactive:hover {
 
 .sidebar {
     flex: 1;
-    float:left
+    float:left;
+    margin: 20px;
 }
 .main-body {
     flex: 1;
 }
-
