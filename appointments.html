@@ -4,6 +4,17 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> 
         <link rel="stylesheet" href="home.css">
         <title>Home</title>
     </head>
@@ -47,6 +58,70 @@
             <div class = "main-body">
                 <div class = "top-left">
                     <h1>Appointment Scheduler</h1>
+                    <div class="alert alert-warning alert-dismissible">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <h2>Important Appointment Information</h2>
+                        <strong>
+                            If you think you are experiencing a medical or psychological emergency, call 911 immediately or proceed to the nearest emergency room! SHCS Acute Care and Crisis Consultation Services are not available through this scheduling system.
+                        </strong>
+                        <hr />
+                        <p>If your health concern falls into any of the following categories, students should contact us at 530.752.2349. UC Davis employees should seek care with their Primary Care Provider:</p>
+                        <ul class="list-unstyled card-columns">
+                            <li>Abdominal Pain</li>
+                            <li>Difficulty Breathing</li>
+                            <li>Chest Pain</li>
+                            <li>Possible Stroke</li>
+                            <li>Severe Pain</li>
+                            <li>Dizziness or Loss of Consciousness</li>
+                            <li>Trauma/Accident</li>
+                            <li>Urgent Mental Health Concern</li>
+                        </ul>
+                    </div>
+                    <h2>Select Appointment Category:</h2>
+                    <p>
+                        COVID Vaccine appointments will be added as vaccine supplies are confirmed. Please <strong>DO NOT</strong> call Student Health or Occupational Health to schedule a COVID Vaccination appointment. All vaccinations will be scheduled using this system. Check the Campus Ready website for additional information on scheduling eligibility.
+                    </p>
+                    <p>
+                        <strong>Students:</strong> If you are unable to schedule an appointment that meets your needs, please phone the Appointment Desk: 530.752.2349 for medical appointments or 530.752.0871 for Counseling Services.
+                    </p>
+                    <p><strong>Select One</strong></p>
+                    <hr />
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="appointmentType" id="appointmentSelect" checked>
+                        <label class="form-check-label" for="appointmentSelect">
+                          COVID-19 Testing
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="appointmentType" id="appointmentSelect">
+                        <label class="form-check-label" for="appointmentSelect">
+                            COVID-19 Vaccination
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="appointmentType" id="appointmentSelect">
+                        <label class="form-check-label" for="appointmentSelect">
+                            Influenza (Flu) Vaccination
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="appointmentType" id="appointmentSelect">
+                        <label class="form-check-label" for="appointmentSelect">
+                            Counseling
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="appointmentType" id="appointmentSelect">
+                        <label class="form-check-label" for="appointmentSelect">
+                            Medical
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="appointmentType" id="appointmentSelect">
+                        <label class="form-check-label" for="appointmentSelect">
+                            Prescription Refill
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
