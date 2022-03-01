@@ -41,3 +41,21 @@ li.inactive:hover {
     flex: 1;
     padding: 20px;
 }
+
+.bulleted {
+    display:list-item;
+    list-style-type: disc;
+    padding: 0px;
+
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 10px;
+    font-size: inherit;
+}
+
+.editable {
+    cursor:pointer;
+    color:#002855;
+}

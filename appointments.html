@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
@@ -66,15 +67,15 @@
                         </strong>
                         <hr />
                         <p>If your health concern falls into any of the following categories, students should contact us at 530.752.2349. UC Davis employees should seek care with their Primary Care Provider:</p>
-                        <ul class="list-unstyled card-columns">
-                            <li>Abdominal Pain</li>
-                            <li>Difficulty Breathing</li>
-                            <li>Chest Pain</li>
-                            <li>Possible Stroke</li>
-                            <li>Severe Pain</li>
-                            <li>Dizziness or Loss of Consciousness</li>
-                            <li>Trauma/Accident</li>
-                            <li>Urgent Mental Health Concern</li>
+                        <ul class="card-columns">
+                            <li class="bulleted">Abdominal Pain</li>
+                            <li class="bulleted">Difficulty Breathing</li>
+                            <li class="bulleted">Chest Pain</li>
+                            <li class="bulleted">Possible Stroke</li>
+                            <li class="bulleted">Severe Pain</li>
+                            <li class="bulleted">Dizziness or Loss of Consciousness</li>
+                            <li class="bulleted">Trauma/Accident</li>
+                            <li class="bulleted">Urgent Mental Health Concern</li>
                         </ul>
                     </div>
                     <h2>Select Appointment Category:</h2>
@@ -86,47 +87,94 @@
                     </p>
                     <p><strong>Select One</strong></p>
                     <hr />
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="appointmentType" id="appointmentSelect" checked>
-                        <label class="form-check-label" for="appointmentSelect">
-                          COVID-19 Testing
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="appointmentType" id="appointmentSelect">
-                        <label class="form-check-label" for="appointmentSelect">
-                            COVID-19 Vaccination
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="appointmentType" id="appointmentSelect">
-                        <label class="form-check-label" for="appointmentSelect">
-                            Influenza (Flu) Vaccination
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="appointmentType" id="appointmentSelect">
-                        <label class="form-check-label" for="appointmentSelect">
-                            Counseling
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="appointmentType" id="appointmentSelect">
-                        <label class="form-check-label" for="appointmentSelect">
-                            Medical
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="appointmentType" id="appointmentSelect">
-                        <label class="form-check-label" for="appointmentSelect">
-                            Prescription Refill
-                        </label>
-                    </div>
+                    <form name="appointmentTypeSelect" id="appointmentTypeForm">
+                        <input hidden checked/>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="appointmentType" id="appointmentSelectCOVIDTest" value="testing" onclick="changeType(this)">
+                            <label class="form-check-label" for="appointmentSelectCOVIDTest">
+                            COVID-19 Testing
+                            </label>
+                        </div>
+                        <div class="alert alert-warning alert-dismissible" id="symptomSurvey" style="display: none;">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            <strong>
+                                If you have any of the following symptoms, click <a href="#">here</a>.
+                            </strong>
+                            <hr />
+                            <ul class="card-columns">
+                                <li class="bulleted">Fever or Chills</li>
+                                <li class="bulleted">Cough</li>
+                                <li class="bulleted">Shortness of Breath or Difficulty Breathing</li>
+                                <li class="bulleted">Fatigue</li>
+                                <li class="bulleted">Muscle or Body Aches</li>
+                                <li class="bulleted">Headache</li>
+                                <li class="bulleted">New Loss of Taste or Smell</li>
+                                <li class="bulleted">Sore Throat</li>
+                                <li class="bulleted">Runny Nose/Sinus Congestion</li>
+                                <li class="bulleted">Nausea or Vomiting</li>
+                                <li class="bulleted">Diarrhea</li>
+                            </ul>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="appointmentType" id="appointmentSelect" value="covidvaxx" onclick="changeType(this)">
+                            <label class="form-check-label" for="appointmentSelect">
+                                COVID-19 Vaccination
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="appointmentType" id="appointmentSelect" value="fluvaxx" onclick="changeType(this)">
+                            <label class="form-check-label" for="appointmentSelect">
+                                Influenza (Flu) Vaccination
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="appointmentType" id="appointmentSelect" value="counseling" onclick="changeType(this)">
+                            <label class="form-check-label" for="appointmentSelect">
+                                Counseling
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="appointmentType" id="appointmentSelect" value="medical" onclick="changeType(this)">
+                            <label class="form-check-label" for="appointmentSelect">
+                                Medical
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="appointmentType" id="appointmentSelect" value="prescription" onclick="changeType(this)">
+                            <label class="form-check-label" for="appointmentSelect">
+                                Prescription Refill
+                            </label>
+                        </div>
+                    </form>
+                    <hr />
+                    <a class="btn btn-primary" href="contactinfo.html" role="button">Continue</a>
+                    <a class="btn btn-light" href="home.html" role="button">Cancel</a>
                 </div>
             </div>
         </div>
 
+
         
     </body>
+
+    <script>
+        function changeType(radio) {
+            var survey = document.getElementById("symptomSurvey");
+            if (radio.value === "testing") {
+                survey.style.display = "block";
+            } else if (radio.value === "covidvaxx") {
+                survey.style.display = "none";
+            } else if (radio.value === "fluvaxx") {
+                survey.style.display = "none";
+            } else if (radio.value === "counseling") {
+                survey.style.display = "none";
+            } else if (radio.value === "medical") {
+                survey.style.display = "none";
+            } else if (radio.value === "prescription") {
+                survey.style.display = "none";
+            }
+        }
+    </script>
 
 </html>
