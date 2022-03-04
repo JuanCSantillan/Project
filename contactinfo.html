@@ -17,7 +17,7 @@
         <!-- Latest compiled JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> 
         <link rel="stylesheet" href="home.css">
-        <title>Home</title>
+        <title>Appointment Scheduler</title>
     </head>
     <body>
         <!-- Image and text -->
@@ -104,8 +104,8 @@
                         </tbody>
                     </table>
                     <hr />
-                    <a class="btn btn-primary" href="consent.html" role="button">Continue</a>
-                    <a class="btn btn-light" href="home.html" role="button">Cancel</a>
+                    <a id="contact_continue_button" class="btn btn-primary" href="confirmation.html" role="button">Continue</a>
+                    <a id="cancel_button" class="btn btn-light" href="home.html" role="button">Cancel</a>
                 </div>
             </div>
         </div>
@@ -113,6 +113,23 @@
     </body>
 
     <script>
+        $("#contact_continue_button").on('click', function() {
+            var email = document.getElementById('emailaddress').textContent;
+            var phone = document.getElementById('phonenumber').textContent;
+            var addr = document.getElementById('address').textContent;
+            sessionStorage.setItem('userEmail', email);
+            sessionStorage.setItem('userPhone', phone);
+            sessionStorage.setItem('userAddr', addr);
+
+            $('#user-email').text(email);
+            $('#user-phone').text(phone);
+            $('#user-addr').text(addr);
+        })
+
+        $("#cancel_button").on('click', function() {
+            sessionStorage.clear();
+        })
+
         function changeType(id, tableid) {
             var editable = document.getElementById(id);
             editable.contentEditable = true;

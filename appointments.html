@@ -17,7 +17,7 @@
         <!-- Latest compiled JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> 
         <link rel="stylesheet" href="home.css">
-        <title>Home</title>
+        <title>Appointment Scheduler</title>
     </head>
     <body>
         <!-- Image and text -->
@@ -149,7 +149,7 @@
                     </form>
                     <hr />
                     <a class="btn btn-primary" href="contactinfo.html" role="button">Continue</a>
-                    <a class="btn btn-light" href="home.html" role="button">Cancel</a>
+                    <a id="cancel_button" class="btn btn-light" href="home.html" role="button">Cancel</a>
                 </div>
             </div>
         </div>
@@ -159,6 +159,10 @@
     </body>
 
     <script>
+        $("#cancel_button").on('click', function() {
+            sessionStorage.clear();
+        })
+
         function changeType(radio) {
             var survey = document.getElementById("symptomSurvey");
             if (radio.value === "testing") {
