@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en" class="responsive">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> 
+        <link rel="stylesheet" href="home.css">
+        <title>Home</title>
+</head>
+
+<body class='appointments_book_list_available'>
+    <nav class="navbar navbar-inverse" style="background-color:#002855; color:white">
+        <div class="container-fluid">
+            <div class="navbar-header navbar-brand">
+                <img src="SHCS-outlined-white.png" width="30%" height="30%" class="d-inline-block" alt="Error!">
+                Health E-Messaging
+            </div>
+
+            <div class="nav navbar-nav navbar-right">
+                Jane Doe
+            </div>
+        </div>
+    </nav>
+    <div class="bottom">
+        <div id="sidebar">
+            <ul class="side-list">
+                <li class="active">Home</li>
+                <li class="inactive">Profile</li>
+                <li class="inactive">Medical Clearances</li>
+                <li class="inactive">Appointments</li>
+                <li class="inactive">Consent Forms</li>
+                <li class="inactive">Group/Workshop</li>
+                <li class="inactive">Referrals</li>
+                <li class="inactive">Handouts</li>
+                <li class="inactive">Messages</li>
+                <li class="inactive">Letters</li>
+                <li class="inactive">Form Upload</li>
+                <li class="inactive">Forms</li>
+                <li class="inactive">Insurance Card</li>
+                <li class="inactive">Survey</li>
+                <li class="inactive">Online Statement</li>
+                <li class="inactive">Medical Record</li>
+                <li class="inactive">Immunizations</li>
+            </ul>   
+        </div>
+        <div class = "main-body">
+            <div class = "top-left">
+                <h1>Schedule Appointment</h1>
+                <p>You are required to sign and submit consent form <b>General Consent for Treatment</b> before booking this appointment.</p>
+                <a class="btn btn-primary" href="consent.html" role="button">Sign Consent</a>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="scrolling">
+              <h1>General Consent for Treatment</h1>
+              <ul>TERMS AND CONDITIONS OF SERVICE
+                <li> 1. SHCS: UC Davis Student Health and Counseling Services is one of the health care components of the University of California</li>
+
+                <li> 2. MEDICAL CONSENT: I consent to any medical treatments or procedures, X-ray examinations, drawing blood for tests, medications, injections, telehealth services, taking of medical photographs, videotaping, and/or laboratory procedures rendered to me under the general and special instructions of the physicians or other medical providers of SHCS assisting in my care.</li>   
+                
+                <li>3. TEACHING, RESEARCH AND HEALTHCARE INSTITUTION: The University of California is a teaching, research and healthcare institution. I understand that medical residents, medical students, students of ancillary health care professions (e.g., nursing, pharmacy, physical therapy), post-graduate fellows, and other trainees may observe, examine, treat or otherwise participate in my care at the request and under the supervision of my health care provider as part of the University's medical education programs. Any use of my medical information and/or specimens by SHCS or other institutions will be in accordance with state and federal law, including all laws and regulations governing confidentiality of patient records.</li>
+                
+                <li> 4. RELEASE OF INFORMATION: SHCS will obtain my written authorization to release information about my medical treatment, except in those circumstances when SHCS is permitted or required by law to release information (see SHCS' Notice of Privacy Practices for a description of the specific circumstances under which SHCS may release this information). For example, SHCS may release a copy of my patient record to other health care providers, health plans and government agencies for continuity of care and/or billing issues. Additionally, I understand that if I am diagnosed with a communicable disease such as tuberculosis or a sexually transmitted disease, reportable in California, SHCS is required by law to report my diagnosis to the local health authority.</li>
+                
+                <li>5. USE AND DISCLOSURE OF MEDICAL INFORMATION: The California Information Practices Act requires SHCS to provide the following information to individuals who supply information about themselves: As a patient of SHCS, you will be asked to submit information about yourself, such as your address and phone number, Social Security number, insurance information, medical history and treatment, and other personal information. The principal purpose for requesting this information is to ensure accurate identification, continuity of medical care, and payment for such care.</li>
+                
+                <li>6. PERSONAL VALUABLES: I understand and agree that SHCS shall not be liable for loss or damage to any personal property I may bring with me to SHCS, including backpacks and purses, glasses, jewelry, clothing, or items of unusual value.</li>
+                
+                <li> 7. RECORDINGS: I agree that while at SHCS, I shall not videotape, audiotape or otherwise record any portion of my visit or interactions, unless expressly authorized by the SHCS Executive Director, SHCS Medical Director or designee.</li>
+                
+                <li>8. FINANCIAL AGREEMENT: I agree to pay The Regents of the University of California for professional and clinic services not otherwise paid or covered by insurance or other sources, in accordance with the established fees in effect on the date of service. Fees incurred at SHCS are billed to UC Davis Student Accounts unless other methods of payment are mutually agreed upon prior to services rendered.</li>
+                
+                <li>9. NOTICE TO CONSUMERS: Medical doctors (MD), doctors of osteopathic medicine (DO), and nurse practitioners (NP) are licensed and regulated by the following respective boards:
+                * MD: Medical Board of California, (800) 633-2322, www.mbc.ca.gov
+                * DO: Calif. Osteopathic Board of Medicine, (916) 928-8390, www.ombc.ca.gov
+                * NP: California Nursing Board, (916) 322-3350, www.rn.ca.gov. For information or complaints you may contact their respective boards.</li>
+
+              </ul>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="appointmentType" id="appointmentSelect" value="covidvaxx" onclick="changeType(this)">
+                <label class="form-check-label" for="appointmentSelect">
+                    I have read and agree to these Terms and Conditions of Service. I also understand I can obtain a copy of these terms from a Registratoin staff member.
+                </label>
+                </div>
+            <br><br>
+            <div class="anon">
+                <label for="anonymous">
+                    AB 685 requires UC Davis ro provide notice to all unions of any employee(including
+                    thos not represented by a union) who tested oistive for COVID-19 and who worked at 
+                    UC Davis facilities while they were considered infectious, and to provide the name,
+                    job title, date, of onset illness and location of the worksite unless they request
+                    privacy. If you are reporting a poistive test or diagnosis, do you want your Information
+                    to be reported anonymously?:
+                    <br>
+                    <select name="anony">
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                      </select>
+                </label>
+            </div>
+            <form action="">
+                <div class="signatue">
+                    <label for="sign">Patient Signature</label><br>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <a class="btn btn-primary" href="schedule.html" role="button">Continue</a>
+            </form>
+            </div>
+
+            </div>
+            </div>
+          
+        </div>
+</body>
+<script>
+    function changeType(id, tableid) {
+        var editable = document.getElementById(id);
+        editable.contentEditable = true;
+        var cell = document.getElementById(tableid);
+        cell.style.border = "1px dotted";
+    }
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+  modal.style.display = "block";
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</html>
