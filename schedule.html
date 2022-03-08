@@ -59,8 +59,6 @@
             <div class = "main-body">
                 <table>
                     <colgroup>
-                        <!---col span="1" style="background-color: gray"> --->
-                        <!-- <col span="7" style="background-color: lightgray">-->
                         <tr>
                             <th></th>
                             <th scop="colgroup">Sunday</th>
@@ -73,152 +71,150 @@
                         </tr>
                         <tr>
                             <th scope="row">8:00-9:00</th>
-                            <td><a href="" class="btn1">available</a></td>
-                            <td><a href="" class="btn2">available</a></td>
-                            <td><a href="" class="btn3">available</a></td>
-                            <td><a href="" class="btn4">available</a></td>
-                            <td><a href="" class="btn5">available</a></td>
-                            <td><a href="" class="btn6">available</a></td>
-                            <td><a href="" class="btn7">available</a></td>
+                            <td><button onclick="togglePopup(this,'8','Sunday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'8','Monday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'8','Tuesday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'8','Wednesday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'8','Thursday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'8','Friday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'8','Saturday')">available</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9:00-10:00</th>
+                            <td><button onclick="togglePopup(this,'9','Sunday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'9','Monday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'9','Tuesday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'9','Wednesday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'9','Thursday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'9','Friday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'9','Saturday')">available</button></td>
                         </tr>
                         <tr>
                             <th scope="row">10:00-11:00</th>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
+                            <td><button onclick="togglePopup(this,'10','Sunday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'10','Monday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'10','Tuesday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'10','Wednesday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'10','Thursday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'10','Friday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'10','Saturday')">available</button></td>
                         </tr>
                         <tr>
                             <th scope="row">11:00-12:00</th>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
+                            <td><button onclick="togglePopup(this,'11','Sunday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'11','Monday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'11','Tuesday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'11','Wednesday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'11','Thursday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'11','Friday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'11','Saturday')">available</button></td>
                         </tr>
                         <tr>
                             <th scope="row">12:00-1:00</th>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
+                            <td><button onclick="togglePopup(this,'12','Sunday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'12','Monday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'12','Tuesday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'12','Wednesday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'12','Thursday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'12','Friday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'12','Saturday')">available</button></td>
                         </tr>
                         <tr>
                             <th scope="row">1:00-2:00</th>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
+                            <td><button onclick="togglePopup(this,'2','Sunday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'2','Monday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'2','Tuesday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'2','Wednesday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'2','Thursday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'2','Friday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'2','Saturday')">available</button></td>
                         </tr>
                         <tr>
                             <th scope="row">2:00-3:00</th>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
+                            <td><button onclick="togglePopup(this,'3','Sunday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'3','Monday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'3','Tuesday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'3','Wednesday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'3','Thursday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'3','Friday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'3','Saturday')">available</button></td>
                         </tr>
                         <tr>
                             <th scope="row">3:00-4:00</th>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4:00-5:00</th>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
-                            <td>available</td>
+                            <td><button onclick="togglePopup(this,'4','Sunday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'4','Monday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'4','Tuesday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'4','Wednesday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'4','Thursday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'4','Friday')">available</button></td>
+                            <td><button onclick="togglePopup(this,'4','Saturday')">available</button></td>
                         </tr>
                     </colgroup>
                 </table>
             </div>
 
-            <div id="myModal" class="modal">
-                <!-- Modal content -->
-                <div class="time-content">
-                     <span class="close">&times;</span>
-                        <form>
-                            <fieldset id="time-choice">
-                                <input type="radio" value="first" name="time-choice">8:00-8:05<br>
-                                <input type="radio" value="first" name="time-choice">8:05-8:10<br>
-                                <input type="radio" value="first" name="time-choice">8:10-8:15<br>
-                                <input type="radio" value="first" name="time-choice">8:15-8:20<br>
-                                <input type="radio" value="first" name="time-choice">8:20-8:25<br>
-                                <input type="radio" value="first" name="time-choice">8:25-8:30<br>
-                                <input type="radio" value="first" name="time-choice">8:30-8:35<br>
-                                <input type="radio" value="first" name="time-choice">8:35-8:40<br>
-                                <input type="radio" value="first" name="time-choice">8:40-8:45<br>
-                                <input type="radio" value="first" name="time-choice">8:45-8:50<br>
-                                <input type="radio" value="first" name="time-choice">8:50-8:55<br>
-                                <input type="radio" value="first" name="time-choice">8:55-9:00<br>
-                            </fieldset>
-                        </form>
-                </div>
+            <div id="popup-1" class="popup">
+                <div class="overlay"></div>
+                    <div class="time-chosen">
+                        <div class="close-btn" onclick="togglePopup()">&times;</div>
+                        <h3 id="header"></h3>
+                        <div class="form">
+                            <form>
+                                <fieldset id="time-choice">
+                                    <input type="radio" value="blank" id="first"><a id="time1-label"></a><br>
+                                    <input type="radio" value="blank" id="second"><a id="time2-label"></a><br>
+                                    <input type="radio" value="blank" id="third"><a id="time3-label"></a><br>
+                                    <input type="radio" value="blank" id="fourth"><a id="time4-label"></a><br>
+                                    <input type="radio" value="blank" id="fith"><a id="time5-label"></a><br>
+                                    <input type="radio" value="blank" id="sixth"><a id="time6-label"></a><br>
+                                    <input type="radio" value="blank" id="seventh"><a id="time7-label"></a><br>
+                                    <input type="radio" value="blank" id="eigth"><a id="time8-label"></a><br>
+                                    <input type="radio" value="blank" id="nineth"><a id="time9-label"></a><br>
+                                    <input type="radio" value="blank" id="tenth"><a id="time10-label"></a><br>
+                                    <input type="radio" value="blank" id="eleventh"><a id="time11-label"></a><br>
+                                    <input type="radio" value="blank" id="twelveth"><a id="time12-label"></a><br>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
             </div>
-          <!--  <div id = myModal class = "model">
-                <div class = "modal-content">
-                    <span class="close">&times;</span>
-                    <form>
-                        <fieldset id="time-choice">
-                            <input type="radio" value="first" name="time-choice">8:00-8:05<br>
-                            <input type="radio" value="first" name="time-choice">8:05-8:10<br>
-                            <input type="radio" value="first" name="time-choice">8:10-8:15<br>
-                            <input type="radio" value="first" name="time-choice">8:15-8:20<br>
-                            <input type="radio" value="first" name="time-choice">8:20-8:25<br>
-                            <input type="radio" value="first" name="time-choice">8:25-8:30<br>
-                            <input type="radio" value="first" name="time-choice">8:30-8:35<br>
-                            <input type="radio" value="first" name="time-choice">8:35-8:40<br>
-                            <input type="radio" value="first" name="time-choice">8:40-8:45<br>
-                            <input type="radio" value="first" name="time-choice">8:45-8:50<br>
-                            <input type="radio" value="first" name="time-choice">8:50-8:55<br>
-                            <input type="radio" value="first" name="time-choice">8:55-9:00<br>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>-->
 
     </body>
     
     
     <script>
-        document.getElementById('btn1').addEventListener("click",
-        function() {
-            document.querySelector('time-content').style.display = "flex";
-        })
-
-        var span = document.getElementsByClassName("close")[0];
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-        modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
+        function togglePopup(self, hour, day){
+            document.getElementById("header").innerHTML = day
+            document.getElementById("popup-1").classList.toggle("active1");
+            var temp = document.getElementById('time1-label');
+            const times = [hour + ":00 - " + hour +":05",
+                        hour + ":05 - " + hour +":10",
+                        hour + ":10 - " + hour +":15",
+                        hour + ":15 - " + hour +":20",
+                        hour + ":20 - " + hour +":25",
+                        hour + ":25 - " + hour +":30",
+                        hour + ":30 - " + hour +":35",
+                        hour + ":35 - " + hour +":40",
+                        hour + ":40 - " + hour +":45",
+                        hour + ":45 - " + hour +":50",
+                        hour + ":50 - " + hour +":55"]
+                        
+            if(hour == "12" ){
+                times.push(hour + ":55 - 1:00");
+            }else{
+                times.push(hour + ":55 - " + String(parseInt(hour)+1) +":00");
+            }
+            const pos = ["first","second","third","fourth","fith","sixth","seventh","eigth","nineth","tenth","eleventh","twelveth"];
+            const label = ['time1-label','time2-label','time3-label','time4-label','time5-label','time6-label',
+            'time7-label','time8-label','time9-label','time10-label','time11-label','time12-label'];
+            var buttonVal = document.getElementById("first").value;
+            buttonVal = times[0];
+            temp.innerHTML = times[0];
+            for(i = 0 ; i <times.length; i++){
+                buttonVal = document.getElementById(pos[i]).value = times[i]
+                document.getElementById(label[i]).innerHTML = times[i]
+            }
+            
         }
     </script>
 
