@@ -4,10 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-
         <!-- jQuery library -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
 
@@ -21,7 +19,7 @@
     </head>
     <body>
         <!-- Image and text -->
-        <nav class="navbar navbar-inverse" style="background-color:#002855; color:white">
+        <nav class="navbar navbar-inverse" style="background-color:#002855; color:white;">
             <div class="container-fluid">
                 <div class="navbar-header navbar-brand">
                     <img src="SHCS-outlined-white.png" width="30%" height="30%" class="d-inline-block" alt="Error!">
@@ -34,7 +32,7 @@
             </div>
         </nav>
         <div class="bottom">
-            <div id="sidebar">
+            <div id="sidebar" class="py-2 mb-4">
                 <ul class="side-list">
                     <li class="active">Home</li>
                     <li class="inactive">Profile</li>
@@ -57,27 +55,72 @@
             </div>
 
             <div class = "main-body">
-                <div class = "top-left">
-                    <h1>Home for User Name</h1>
-                    <span class="log-in">You last loffeg in: DATE</span>
-                    <span class="logout">Log Out</span>
-                    <a class="complete-survey">Complete Survey</a>
 
+                <div class = "top-left">
+                    <h1>Home for Jane Doe</h1>
+                    <span class="log-in">You last logged in: 3/7/2022 5:34 PM</span>
+                    <span class="logout"><a href=#>Log Out</a></span>
+                    <br />
+                    <a class="complete-survey">Complete Daily Symptom Survey</a>
+                <!-- </div>
+                <hr />
+                <h2> -->
+                    <br />
+                    COVID-19 Testing Status:
+                    <span class="badge badge-danger">2 DAYS UNTIL NON-COMPLIANT</span>
                 </div>
-                <div class="countdown">
-                    The countdown will go here
+                <hr />
+                <h2>I would like to...</h2>
+                <div class="row justify-content-center">
+                <div class="col-auto table-responsive">
+                <table style="text-align: center;" class="table">
+                    <tbody>
+                    <tr>
+                        <td class="hleft vtop">
+                            <a class="forshow">
+                            <i class="fa fa-medkit" style="font-size:72px"></i>
+                            <br /> <br />
+                            Enter My COVID-19 <br />Vaccination Information</a>
+                        </td>
+                        <td class="hleft vtop">
+                            <a class="forshow" href="appointments.html">
+                            <i class="fa fa-calendar-plus-o" style="font-size:72px"></i>
+                            <br /> <br />
+                            Schedule an Appointment</a>
+                        </td>
+                        <td class="hleft vtop">
+                            <a class="forshow">
+                            <i class="fa fa-flag" style="font-size:72px"></i>
+                            <br /> <br />
+                            Report COVID</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hleft vtop">
+                            <a class="forshow">
+                            <i class="fa fa-flask" style="font-size:72px"></i>
+                            <br /> <br />
+                            View My Lab Results</a>
+                        </td>
+                        <td class="hleft vtop">
+                            <a class="forshow">
+                            <i class="fa fa-check-square-o" style="font-size:72px"></i>
+                            <br /> <br />
+                            Clinical Surveys</a>
+                        </td>
+                        <td class="hleft vtop">
+                            <a class="forshow">
+                            <i class="fa fa-pencil-square-o" style="font-size:72px"></i>
+                            <br /> <br />
+                            Edit My Profile</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
                 </div>
-                <div class="Options">
-                    <h2>I would like to...</h2>
-                    <ul class="main-list">
-                        <li class="center-btn"><a class="forshow">Enter My Covid-19 Vaccination Information</a></li>
-                        <li class="center-btn"><a class="forshow" href="appointments.html">Schedule an Appointment</a></li>
-                        <li class="center-btn"><a class="forshow">Report COVID </br> (Click "New Message" on next screen)</a></li>
-                        <li class="center-btn"><a class="forshow">View My Lab Results</a></li>
-                        <li class="center-btn"><a class="forshow">Clinical Surveys</a></li>
-                        <li class="center-btn"><a class="forshow">Edit My Profile</a></li>
-                    </ul>
                 </div>
+
+                <hr />
                 <div class="bottom">
                     <div class="first-bottom">For the latest information and guidelines on COVID-19 visit the Campus Ready website.</div>
                     <div class="second-bottom">COVID-19 vaccine mandate or testing questions: covid@shcs.ucdavis.edu</div>

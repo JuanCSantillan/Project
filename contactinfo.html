@@ -34,7 +34,7 @@
             </div>
         </nav>
         <div class="bottom">
-            <div id="sidebar">
+            <div id="sidebar" class="py-2 mb-4">
                 <ul class="side-list">
                     <li class="active">Home</li>
                     <li class="inactive">Profile</li>
@@ -103,8 +103,26 @@
                         </tr>
                         </tbody>
                     </table>
+                    <br />
+                    <strong>Is your callback phone number the same as your local phone number?</strong>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="callbackType" id="callbackSelectYes" value="yes" onclick="toggleCallback(this)">
+                        <label class="form-check-label" for="callbackSelectYes">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="callbackType" id="callbackSelectNo" value="no" onclick="toggleCallback(this)">
+                        <label class="form-check-label" for="callbackSelectNo">
+                            No
+                        </label>
+                    </div>
+                    <br />
+                    <div class="form-group" id="addCallback" style="display: none;">
+                        <input type="text" class="form-control" id="callbackNumber" placeholder="Enter callback number">
+                    </div>
                     <hr />
-                    <a id="contact_continue_button" class="btn btn-primary" href="confirmation.html" role="button">Continue</a>
+                    <a id="contact_continue_button" class="btn btn-primary" href="consent.html" role="button">Continue</a>
                     <a id="cancel_button" class="btn btn-light" href="home.html" role="button">Cancel</a>
                 </div>
             </div>
@@ -135,6 +153,16 @@
             editable.contentEditable = true;
             var cell = document.getElementById(tableid);
             cell.style.border = "1px dotted";
+        }
+
+
+        function toggleCallback(radio) {
+            var callback = document.getElementById("addCallback");
+            if (radio.value === "yes") {
+                callback.style.display = "none";
+            } else if (radio.value === "no") {
+                callback.style.display = "block";
+            }
         }
     </script>
 
