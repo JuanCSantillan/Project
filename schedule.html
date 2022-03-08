@@ -57,17 +57,25 @@
             </div>
 
             <div class = "main-body">
-                <table>
+                <h2>Schedule Appointment</h2>
+                <strong>Appointments available to book via the web:</strong>
+                <div>Visit Type: <strong>COVID-19 Test</strong></div>
+                <div>Location: 
+                <select id="LocationList" name="LocationList" style="font-size:1em;" class="required div-inline"><option value="" selected="">Select Location...</option><option value="71">DAVIS - ACTIVITIES AND RECREATION CENTER</option><option value="84">SACRAMENTO - ADMIN SUPPORT BUILDING</option></select>
+                </div>
+                <hr />
+                <h2>March 2022</h2>
+                <table style="text-align: center;">
                     <colgroup>
                         <tr>
                             <th></th>
-                            <th scop="colgroup">Sunday</th>
-                            <th scop="colgroup">Monday</th>
-                            <th scop="colgroup">Tuesday</th>
-                            <th scop="colgroup">Wednesday</th>
-                            <th scop="colgroup">Thursday</th>
-                            <th scop="colgroup">Friday</th>
-                            <th scop="colgroup">Saturday</th>
+                            <th scop="colgroup">Sunday<br />13</th>
+                            <th scop="colgroup">Monday<br />14</th>
+                            <th scop="colgroup">Tuesday<br />15</th>
+                            <th scop="colgroup">Wednesday<br />16</th>
+                            <th scop="colgroup">Thursday<br />17</th>
+                            <th scop="colgroup">Friday<br />18</th>
+                            <th scop="colgroup">Saturday<br />19</th>
                         </tr>
                         <tr>
                             <th scope="row">8:00-9:00</th>
@@ -82,19 +90,20 @@
                         <tr>
                             <th scope="row">9:00-10:00</th>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'9','Sunday')">available</button></td>
-                            <td><button class="btn btn-success" onclick="togglePopup(this,'9','Monday')">available</button></td>
+                            <td><button class="btn btn-warning" onclick="togglePopup(this,'9','Monday')">available</button></td>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'9','Tuesday')">available</button></td>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'9','Wednesday')">available</button></td>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'9','Thursday')">available</button></td>
-                            <td><button class="btn btn-success" nclick="togglePopup(this,'9','Friday')">available</button></td>
+                            <td><button class="btn btn-success" onclick="togglePopup(this,'9','Friday')">available</button></td>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'9','Saturday')">available</button></td>
                         </tr>
                         <tr>
                             <th scope="row">10:00-11:00</th>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'10','Sunday')">available</button></td>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'10','Monday')">available</button></td>
-                            <td><button class="btn btn-success" onclick="togglePopup(this,'10','Tuesday')">available</button></td>
-                            <td><button class="btn btn-success" onclick="togglePopup(this,'10','Wednesday')">available</button></td>
+                            <td></td>
+                            <!-- <td><button class="btn btn-success" onclick="togglePopup(this,'10','Tuesday')">available</button></td> -->
+                            <td><button class="btn btn-warning" onclick="togglePopup(this,'10','Wednesday')">available</button></td>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'10','Thursday')">available</button></td>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'10','Friday')">available</button></td>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'10','Saturday')">available</button></td>
@@ -102,14 +111,16 @@
                         <tr>
                             <th scope="row">11:00-12:00</th>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'11','Sunday')">available</button></td>
-                            <td><button class="btn btn-success" onclick="togglePopup(this,'11','Monday')">available</button></td>
-                            <td><button class="btn btn-success" onclick="togglePopup(this,'11','Tuesday')">available</button></td>
-                            <td><button class="btn btn-success" onclick="togglePopup(this,'11','Wednesday')">available</button></td>
-                            <td><button class="btn btn-success" onclick="togglePopup(this,'11','Thursday')">available</button></td>
-                            <td><button class="btn btn-success" onclick="togglePopup(this,'11','Friday')">available</button></td>
+                            <td><button class="btn btn-warning" onclick="togglePopup(this,'11','Monday')">available</button></td>
+                            <td></td>
+                            <td></td>
+                            <!-- <td><button class="btn btn-success" onclick="togglePopup(this,'11','Tuesday')">available</button></td> -->
+                            <!-- <td><button class="btn btn-success" onclick="togglePopup(this,'11','Wednesday')">available</button></td> -->
+                            <td><button class="btn btn-warning" onclick="togglePopup(this,'11','Thursday')">available</button></td>
+                            <td><button class="btn btn-warning" onclick="togglePopup(this,'11','Friday')">available</button></td>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'11','Saturday')">available</button></td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <th scope="row">12:00-1:00</th>
                             <td><button class="btn btn-success" nclick="togglePopup(this,'12','Sunday')">available</button></td>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'12','Monday')">available</button></td>
@@ -118,35 +129,37 @@
                             <td><button class="btn btn-success" onclick="togglePopup(this,'12','Thursday')">available</button></td>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'12','Friday')">available</button></td>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'12','Saturday')">available</button></td>
-                        </tr>
+                        </tr> -->
                         <tr>
                             <th scope="row">1:00-2:00</th>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'2','Sunday')">available</button></td>
-                            <td><button class="btn btn-success" onclick="togglePopup(this,'2','Monday')">available</button></td>
+                            <td><button class="btn btn-warning" onclick="togglePopup(this,'2','Monday')">available</button></td>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'2','Tuesday')">available</button></td>
-                            <td><button class="btn btn-success" onclick="togglePopup(this,'2','Wednesday')">available</button></td>
-                            <td><button class="btn btn-success" onclick="togglePopup(this,'2','Thursday')">available</button></td>
-                            <td><button class="btn btn-success" onclick="togglePopup(this,'2','Friday')">available</button></td>
+                            <td><button class="btn btn-warning" onclick="togglePopup(this,'2','Wednesday')">available</button></td>
+                            <td><button class="btn btn-warning" onclick="togglePopup(this,'2','Thursday')">available</button></td>
+                            <td></td>
+                            <!-- <td><button class="btn btn-success" onclick="togglePopup(this,'2','Friday')">available</button></td> -->
                             <td><button class="btn btn-success" onclick="togglePopup(this,'2','Saturday')">available</button></td>
                         </tr>
                         <tr>
                             <th scope="row">2:00-3:00</th>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'3','Sunday')">available</button></td>
-                            <td><button class="btn btn-success" onclick="togglePopup(this,'3','Monday')">available</button></td>
+                            <td><button class="btn btn-warning" onclick="togglePopup(this,'3','Monday')">available</button></td>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'3','Tuesday')">available</button></td>
-                            <td><button class="btn btn-success" onclick="togglePopup(this,'3','Wednesday')">available</button></td>
-                            <td><button class="btn btn-success" onclick="togglePopup(this,'3','Thursday')">available</button></td>
+                            <td><button class="btn btn-warning" onclick="togglePopup(this,'3','Wednesday')">available</button></td>
+                            <td></td>
+                            <!-- <td><button class="btn btn-success" onclick="togglePopup(this,'3','Thursday')">available</button></td> -->
                             <td><button class="btn btn-success" onclick="togglePopup(this,'3','Friday')">available</button></td>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'3','Saturday')">available</button></td>
                         </tr>
                         <tr>
                             <th scope="row">3:00-4:00</th>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'4','Sunday')">available</button></td>
-                            <td><button class="btn btn-success" onclick="togglePopup(this,'4','Monday')">available</button></td>
-                            <td><button class="btn btn-success" onclick="togglePopup(this,'4','Tuesday')">available</button></td>
+                            <td><button class="btn btn-warning" onclick="togglePopup(this,'4','Monday')">available</button></td>
+                            <td><button class="btn btn-warning" onclick="togglePopup(this,'4','Tuesday')">available</button></td>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'4','Wednesday')">available</button></td>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'4','Thursday')">available</button></td>
-                            <td><button class="btn btn-success" onclick="togglePopup(this,'4','Friday')">available</button></td>
+                            <td><button class="btn btn-warning" onclick="togglePopup(this,'4','Friday')">available</button></td>
                             <td><button class="btn btn-success" onclick="togglePopup(this,'4','Saturday')">available</button></td>
                         </tr>
                     </colgroup>
