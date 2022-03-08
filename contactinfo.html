@@ -64,6 +64,19 @@
                         <tbody>
                         <tr>
                             <td class="hleft vtop">
+                                <div>UC Davis Affiliation:</div>
+                            </td>
+                            <td class="hleft vtop" id="affiliationcell">
+                                <div id="affiliation"><strong>Student</strong></div>
+                            </td>
+                            <td class="hleft vtop">
+                                <a class="editable" title="Edit Affiliation" href="#">
+                                    <i class="fa fa-edit" onclick="changeType('affiliation', 'affiliationcell')"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="hleft vtop">
                                 <div>Email Address:</div>
                             </td>
                             <td class="hleft vtop" id="emailcell">
@@ -121,9 +134,25 @@
                     <div class="form-group" id="addCallback" style="display: none;">
                         <input type="text" class="form-control" id="callbackNumber" placeholder="Enter callback number">
                     </div>
-                    <hr />
-                    <a id="contact_continue_button" class="btn btn-primary" href="consent.html" role="button">Continue</a>
-                    <a id="cancel_button" class="btn btn-light" href="home.html" role="button">Cancel</a>
+                    <div class="row justify-content-center">
+                    <div class="col-auto table-responsive">        
+                    <table style="text-align: center;" class="table">
+                        <tbody>
+                        <tr>
+                            <td class="hleft vtop">
+                                <a id="contact_continue_button" class="btn btn-light" href="appointments.html" role="button"> <i class="fa fa-arrow-left"></i> Back</a>
+                            </td>
+                            <td class="hleft vtop" id="affiliationcell">
+                                <a id="cancel_button" class="btn btn-danger" href="home.html" role="button">Cancel</a>
+                            </td>
+                            <td class="hleft vtop">
+                                <a id="contact_continue_button" class="btn btn-primary" href="consent.html" role="button">Continue <i class="fa fa-arrow-right"></i></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
